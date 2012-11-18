@@ -12,7 +12,7 @@
 
 - (void) setText:(id)text withFirstMatchRegex:(NSString*)regex withFont:(UIFont*)font withColor:(UIColor*)color;
 - (void) setText:(id)text withFirstMatchRegex:(NSString*)regex withFont:(UIFont*)font;
-- (void) setText:(id)text withRegex:(NSString*)regex withFont:(UIFont*)font withColor:(UIColor*)color;;
+- (void) setText:(id)text withRegex:(NSString*)regex withFont:(UIFont*)font withColor:(UIColor*)color;
 - (void) setText:(id)text withRegex:(NSString*)regex withFont:(UIFont*)font;
 
 @end
