@@ -40,7 +40,7 @@ Quentin Rousseau
 
 - https://github.com/kwent
 - http://twitter.com/quentinrousseau
-- contact@quentinrousseau.com
+- contact@quentinrousseau.fr
 
 ## License
 
