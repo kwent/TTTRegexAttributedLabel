@@ -43,6 +43,11 @@ extern NSString * const kTTTStrikeOutAttributeName;
 extern NSString * const kTTTBackgroundFillColorAttributeName;
 
 /**
+ The padding for the background fill. Value must be a `UIEdgeInsets`. Default value is `UIEdgeInsetsZero` (no padding).
+ */
+extern NSString * const kTTTBackgroundFillPaddingAttributeName;
+
+/**
  The background stroke color. Value must be a `CGColorRef`. Default value is `nil` (no stroke).
  */
 extern NSString * const kTTTBackgroundStrokeColorAttributeName;
@@ -77,6 +82,10 @@ extern NSString * const kTTTBackgroundCornerRadiusAttributeName;
  
  Any properties affecting text or paragraph styling, such as `firstLineIndent` will only apply when text is set with an `NSString`. If the text is set with an `NSAttributedString`, these properties will not apply.
  
+ ### NSCoding
+ 
+ `TTTAttributedLabel`, like `UILabel`, conforms to `NSCoding`. However, if the build target is set to less than iOS 6.0, `linkAttributes` and `activeLinkAttributes` will not be encoded or decoded. This is due to an runtime exception thrown when attempting to copy non-object CoreText values in dictionaries.
+ 
  @warning Any properties changed on the label after setting the text will not be reflected until a subsequent call to `setText:` or `setText:afterInheritingLabelAttributesAndConfiguringWithBlock:`. This is to say, order of operations matters in this case. For example, if the label text color is originally black when the text is set, changing the text color to red will have no effect on the display of the label until the text is set once again.
  */
 @interface TTTAttributedLabel : UILabel <TTTAttributedLabel, UIGestureRecognizerDelegate>
@@ -90,18 +99,18 @@ extern NSString * const kTTTBackgroundCornerRadiusAttributeName;
  
  @discussion A `TTTAttributedLabel` delegate responds to messages sent by tapping on links in the label. You can use the delegate to respond to links referencing a URL, address, phone number, date, or date with a specified time zone and duration.
  */
-@property (nonatomic, unsafe_unretained) id <TTTAttributedLabelDelegate> delegate;
+@property (nonatomic, unsafe_unretained) IBOutlet id <TTTAttributedLabelDelegate> delegate;
 
 ///--------------------------------------------
 /// @name Detecting, Accessing, & Styling Links
 ///--------------------------------------------
 
 /**
- A bitmask of `UIDataDetectorTypes` which are used to automatically detect links in the label text. This is `UIDataDetectorTypeNone` by default.
+ A bitmask of `NSTextCheckingType` which are used to automatically detect links in the label text.
  
  @warning You must specify `dataDetectorTypes` before setting the `text`, with either `setText:` or `setText:afterInheritingLabelAttributesAndConfiguringWithBlock:`.
  */
-@property (nonatomic, assign) UIDataDetectorTypes dataDetectorTypes;
+@property (nonatomic, assign) NSTextCheckingTypes dataDetectorTypes;
 
 /**
  An array of `NSTextCheckingResult` objects for links detected or manually added to the label text.
@@ -157,7 +166,7 @@ extern NSString * const kTTTBackgroundCornerRadiusAttributeName;
 @property (nonatomic, assign) CGFloat leading;
 
 /**
- The line height multiple. This value is 0.0 by default.
+ The line height multiple. This value is 1.0 by default.
  */
 @property (nonatomic, assign) CGFloat lineHeightMultiple;
 
@@ -292,6 +301,15 @@ afterInheritingLabelAttributesAndConfiguringWithBlock:(NSMutableAttributedString
              duration:(NSTimeInterval)duration
             withRange:(NSRange)range;
 
+/**
+ Adds a link to transit information for a specified range in the label text.
+
+ @param components A dictionary containing the transit components. The currently supported keys are `NSTextCheckingAirlineKey` and `NSTextCheckingFlightKey`.
+ @param range The range in the label text of the link. The range must not exceed the bounds of the receiver.
+ */
+- (void)addLinkToTransitInformation:(NSDictionary *)components
+                          withRange:(NSRange)range;
+
 @end
 
 /**
@@ -352,6 +370,15 @@ didSelectLinkWithPhoneNumber:(NSString *)phoneNumber;
   didSelectLinkWithDate:(NSDate *)date
                timeZone:(NSTimeZone *)timeZone
                duration:(NSTimeInterval)duration;
+
+/**
+ Tells the delegate that the user did select a link to transit information
+
+ @param label The label whose link was selected.
+ @param components A dictionary containing the transit components. The currently supported keys are `NSTextCheckingAirlineKey` and `NSTextCheckingFlightKey`.
+ */
+- (void)attributedLabel:(TTTAttributedLabel *)label
+didSelectLinkWithTransitInformation:(NSDictionary *)components;
 
 /**
  Tells the delegate that the user did select a link to a text checking result.
