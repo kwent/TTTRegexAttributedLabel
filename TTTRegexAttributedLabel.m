@@ -3,7 +3,7 @@
 //  TTTRegexAttributedLabel
 //
 //  Created by Rousseau Quentin on 02/10/12.
-//  Copyright (c) 2012 Onefeat. All rights reserved.
+//  Copyright (c) 2013 Quentin Rousseau. All rights reserved.
 //
 
 #import "TTTRegexAttributedLabel.h"
@@ -17,7 +17,12 @@
 
 - (void) setText:(id)text withFirstMatchRegex:(NSString*)regex withFont:(UIFont*)font withColor:(UIColor*)color
 {
-  NSRegularExpression *rg = [NSRegularExpression regularExpressionWithPattern:regex options:NSRegularExpressionCaseInsensitive error:nil];
+  [self setText:text withFirstMatchRegex:regex withRegexOptions:NSRegularExpressionCaseInsensitive withFont:font withColor:color];
+}
+  
+- (void) setText:(id)text withFirstMatchRegex:(NSString*)regex withRegexOptions:(NSRegularExpressionOptions)regexOption withFont:(UIFont*)font withColor:(UIColor*)color
+{
+  NSRegularExpression *rg = [NSRegularExpression regularExpressionWithPattern:regex options:regexOption error:nil];
   NSTextCheckingResult *match = [rg firstMatchInString:text options:0 range:NSMakeRange(0, [text length])];
   
   [self setText:text afterInheritingLabelAttributesAndConfiguringWithBlock:^NSMutableAttributedString *(NSMutableAttributedString *mutableAttributedString) {
@@ -40,8 +45,13 @@
 
 - (void) setText:(id)text withRegex:(NSString*)regex withFont:(UIFont*)font withColor:(UIColor*)color
 {
+  [self setText:text withRegex:regex withRegexOptions:NSRegularExpressionCaseInsensitive withFont:font withColor:color];
+}
   
-  NSRegularExpression *rg = [NSRegularExpression regularExpressionWithPattern:regex options:NSRegularExpressionCaseInsensitive error:nil];
+- (void) setText:(id)text withRegex:(NSString*)regex withRegexOptions:(NSRegularExpressionOptions)regexOption withFont:(UIFont*)font withColor:(UIColor*)color
+{
+  
+  NSRegularExpression *rg = [NSRegularExpression regularExpressionWithPattern:regex options:regexOption error:nil];
   
   NSArray *matches = [rg matchesInString:text options:0 range:NSMakeRange(0, [text length])];
   

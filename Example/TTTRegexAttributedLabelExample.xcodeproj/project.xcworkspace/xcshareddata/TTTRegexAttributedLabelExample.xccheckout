@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B22F641D-69C3-4305-96E6-22CFE2921EF5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TTTRegexAttributedLabelExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8F59052F-7860-46A7-AE38-9787ECDB752F</key>
+		<string>ssh://github.com/kwent/TTTRegexAttributedLabel.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/TTTRegexAttributedLabelExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8F59052F-7860-46A7-AE38-9787ECDB752F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/kwent/TTTRegexAttributedLabel.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8F59052F-7860-46A7-AE38-9787ECDB752F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8F59052F-7860-46A7-AE38-9787ECDB752F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TTTRegexAttributedLabel</string>
+		</dict>
+	</array>
+</dict>
+</plist>
