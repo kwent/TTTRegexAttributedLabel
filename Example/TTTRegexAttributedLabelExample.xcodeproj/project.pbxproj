@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F2A4A551A536AF2009F40FD /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2A4A541A536AF2009F40FD /* Launch Screen.xib */; };
 		6F3F6B211834A87000244655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B201834A87000244655 /* Foundation.framework */; };
 		6F3F6B231834A87000244655 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B221834A87000244655 /* CoreGraphics.framework */; };
 		6F3F6B251834A87000244655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B241834A87000244655 /* UIKit.framework */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F2A4A541A536AF2009F40FD /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		6F3F6B1D1834A87000244655 /* TTTRegexAttributedLabelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTRegexAttributedLabelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F3F6B201834A87000244655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6F3F6B221834A87000244655 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +81,7 @@
 		6F3F6B141834A87000244655 = {
 			isa = PBXGroup;
 			children = (
+				6F2A4A541A536AF2009F40FD /* Launch Screen.xib */,
 				6F3F6B621834AB7600244655 /* TTTAttributedLabel */,
 				6F3F6B5D1834AAB800244655 /* TTTRegexAttributedLabel.h */,
 				6F3F6B5E1834AAB800244655 /* TTTRegexAttributedLabel.m */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F3F6B2B1834A87000244655 /* InfoPlist.strings in Resources */,
+				6F2A4A551A536AF2009F40FD /* Launch Screen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

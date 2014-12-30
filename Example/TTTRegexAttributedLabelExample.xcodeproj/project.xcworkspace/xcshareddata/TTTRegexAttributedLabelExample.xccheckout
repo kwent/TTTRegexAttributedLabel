@@ -10,29 +10,29 @@
 	<string>TTTRegexAttributedLabelExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>8F59052F-7860-46A7-AE38-9787ECDB752F</key>
-		<string>ssh://github.com/kwent/TTTRegexAttributedLabel.git</string>
+		<key>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</key>
+		<string>github.com:kwent/TTTRegexAttributedLabel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Example/TTTRegexAttributedLabelExample.xcodeproj/project.xcworkspace</string>
+	<string>Example/TTTRegexAttributedLabelExample.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>8F59052F-7860-46A7-AE38-9787ECDB752F</key>
+		<key>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/kwent/TTTRegexAttributedLabel.git</string>
+	<string>github.com:kwent/TTTRegexAttributedLabel.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8F59052F-7860-46A7-AE38-9787ECDB752F</string>
+	<string>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8F59052F-7860-46A7-AE38-9787ECDB752F</string>
+			<string>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TTTRegexAttributedLabel</string>
 		</dict>

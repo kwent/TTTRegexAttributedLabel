@@ -17,8 +17,9 @@
   
     self.view.backgroundColor = [UIColor whiteColor];
   
+    
     //SET FONT ONLY ON FIRST MATCH REGEX
-    TTTRegexAttributedLabel *label1 = [[TTTRegexAttributedLabel alloc] initWithFrame:CGRectMake(25, 20, self.view.bounds.size.width - 50, 160)];
+    TTTRegexAttributedLabel *label1 = [[TTTRegexAttributedLabel alloc] initWithFrame:CGRectMake(25, 40, self.view.bounds.size.width - 50, 160)];
     label1.numberOfLines = 0;
     label1.textAlignment = NSTextAlignmentCenter;
     NSString *s1 = @"\"kitty\" regex & first match:\rSoft kitty,\nWarm kitty,\nLittle ball of fur.\nHappy kitty,\nSleepy kitty,\nPurr, purr, purr.";
@@ -27,7 +28,7 @@
         withColor:[UIColor redColor]];
   
     //SET FONT & COLOR EVERY MATCHES
-    TTTRegexAttributedLabel *label2 = [[TTTRegexAttributedLabel alloc] initWithFrame:CGRectMake(25, 180, self.view.bounds.size.width - 50, 160)];
+    TTTRegexAttributedLabel *label2 = [[TTTRegexAttributedLabel alloc] initWithFrame:CGRectMake(25, 200, self.view.bounds.size.width - 50, 160)];
     label2.numberOfLines = 0;
     label2.textAlignment = NSTextAlignmentCenter;
     NSString *s2 = @"\"kitty\" regex & every matches:\rSoft kitty,\nWarm kitty,\nLittle ball of fur.\nHappy kitty,\nSleepy kitty,\nPurr, purr, purr.";
@@ -36,7 +37,7 @@
         withColor:[UIColor redColor]];
   
     ///SET FONT ONLY ON FIRST MATCH REGEX
-    TTTRegexAttributedLabel *label3 = [[TTTRegexAttributedLabel alloc] initWithFrame:CGRectMake(25, 350, self.view.bounds.size.width - 50, 50)];
+    TTTRegexAttributedLabel *label3 = [[TTTRegexAttributedLabel alloc] initWithFrame:CGRectMake(25, 370, self.view.bounds.size.width - 50, 50)];
     label3.numberOfLines = 0;
     label3.textAlignment = NSTextAlignmentCenter;
     NSString *s3 = @"\"\\d{3}\" regex & first match:\r 10, 12, 13, 200, 300";
@@ -45,7 +46,7 @@
         withColor:[UIColor blueColor]];
   
     //SET FONT & COLOR EVERY MATCHES
-    TTTRegexAttributedLabel *label4 = [[TTTRegexAttributedLabel alloc] initWithFrame:CGRectMake(25, 410, self.view.bounds.size.width - 50, 50)];
+    TTTRegexAttributedLabel *label4 = [[TTTRegexAttributedLabel alloc] initWithFrame:CGRectMake(25, 430, self.view.bounds.size.width - 50, 50)];
     label4.numberOfLines = 0;
     label4.textAlignment = NSTextAlignmentCenter;
     NSString *s4 = @"\"\\d{3}\" regex & every matches:\r 10, 12, 13, 200, 300";
