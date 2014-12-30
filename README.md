@@ -5,6 +5,22 @@
 
 ![A demo screen](Docs/screenshot.jpg)
 
+
+## Installation
+
+Clone the repository
+
+```shell
+$ git clone git@github.com:kwent/TTTRegexAttributedLabel.git
+$ cd TTTRegexAttributedLabel/
+```
+
+Install **TTTAttributedLabel** Git submodules
+
+```shell
+$ git submodule update --init --recursive
+```
+
 ## Example Usage
 
 ``` objective-c

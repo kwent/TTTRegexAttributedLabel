@@ -12,6 +12,8 @@
 	<dict>
 		<key>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</key>
 		<string>github.com:kwent/TTTRegexAttributedLabel.git</string>
+		<key>A43B3F8F1FFE63510EF5D0CFDB1DB558C0C67BF9</key>
+		<string>github.com:TTTAttributedLabel/TTTAttributedLabel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Example/TTTRegexAttributedLabelExample.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</key>
 		<string>../../..</string>
+		<key>A43B3F8F1FFE63510EF5D0CFDB1DB558C0C67BF9</key>
+		<string>../../..TTTAttributedLabel/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:kwent/TTTRegexAttributedLabel.git</string>
@@ -28,6 +32,14 @@
 	<string>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A43B3F8F1FFE63510EF5D0CFDB1DB558C0C67BF9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TTTAttributedLabel</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F2A4A551A536AF2009F40FD /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2A4A541A536AF2009F40FD /* Launch Screen.xib */; };
+		6F2A4A591A536C4F009F40FD /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A4A581A536C4F009F40FD /* TTTAttributedLabel.m */; };
 		6F3F6B211834A87000244655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B201834A87000244655 /* Foundation.framework */; };
 		6F3F6B231834A87000244655 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B221834A87000244655 /* CoreGraphics.framework */; };
 		6F3F6B251834A87000244655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B241834A87000244655 /* UIKit.framework */; };
@@ -19,7 +20,6 @@
 		6F3F6B441834A87000244655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B201834A87000244655 /* Foundation.framework */; };
 		6F3F6B451834A87000244655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B241834A87000244655 /* UIKit.framework */; };
 		6F3F6B601834AAB800244655 /* TTTRegexAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F6B5E1834AAB800244655 /* TTTRegexAttributedLabel.m */; };
-		6F3F6B651834AB7600244655 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F6B641834AB7600244655 /* TTTAttributedLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		6F2A4A541A536AF2009F40FD /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		6F2A4A571A536C4F009F40FD /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		6F2A4A581A536C4F009F40FD /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		6F3F6B1D1834A87000244655 /* TTTRegexAttributedLabelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTRegexAttributedLabelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F3F6B201834A87000244655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6F3F6B221834A87000244655 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,8 +52,6 @@
 		6F3F6B421834A87000244655 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6F3F6B5D1834AAB800244655 /* TTTRegexAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTRegexAttributedLabel.h; path = ../TTTRegexAttributedLabel.h; sourceTree = "<group>"; };
 		6F3F6B5E1834AAB800244655 /* TTTRegexAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTRegexAttributedLabel.m; path = ../TTTRegexAttributedLabel.m; sourceTree = "<group>"; };
-		6F3F6B631834AB7600244655 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
-		6F3F6B641834AB7600244655 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F2A4A561A536C4F009F40FD /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				6F2A4A571A536C4F009F40FD /* TTTAttributedLabel.h */,
+				6F2A4A581A536C4F009F40FD /* TTTAttributedLabel.m */,
+			);
+			name = TTTAttributedLabel;
+			path = ../TTTAttributedLabel/TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
 		6F3F6B141834A87000244655 = {
 			isa = PBXGroup;
 			children = (
 				6F2A4A541A536AF2009F40FD /* Launch Screen.xib */,
-				6F3F6B621834AB7600244655 /* TTTAttributedLabel */,
+				6F2A4A561A536C4F009F40FD /* TTTAttributedLabel */,
 				6F3F6B5D1834AAB800244655 /* TTTRegexAttributedLabel.h */,
 				6F3F6B5E1834AAB800244655 /* TTTRegexAttributedLabel.m */,
 				6F3F6B261834A87000244655 /* TTTRegexAttributedLabel */,
@@ -134,16 +144,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6F3F6B621834AB7600244655 /* TTTAttributedLabel */ = {
-			isa = PBXGroup;
-			children = (
-				6F3F6B631834AB7600244655 /* TTTAttributedLabel.h */,
-				6F3F6B641834AB7600244655 /* TTTAttributedLabel.m */,
-			);
-			name = TTTAttributedLabel;
-			path = ../TTTAttributedLabel;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,7 +188,7 @@
 		6F3F6B151834A87000244655 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Quentin Rousseau";
 				TargetAttributes = {
 					6F3F6B401834A87000244655 = {
@@ -243,7 +243,7 @@
 				6F3F6B311834A87000244655 /* AppDelegate.m in Sources */,
 				6F3F6B2D1834A87000244655 /* main.m in Sources */,
 				6F3F6B601834AAB800244655 /* TTTRegexAttributedLabel.m in Sources */,
-				6F3F6B651834AB7600244655 /* TTTAttributedLabel.m in Sources */,
+				6F2A4A591A536C4F009F40FD /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +280,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -320,7 +319,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -379,7 +377,6 @@
 		6F3F6B561834A87000244655 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTTRegexAttributedLabel.app/TTTRegexAttributedLabel";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -402,7 +399,6 @@
 		6F3F6B571834A87000244655 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTTRegexAttributedLabel.app/TTTRegexAttributedLabel";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
