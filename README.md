@@ -83,7 +83,7 @@ Quentin Rousseau
 
 - https://github.com/kwent
 - http://twitter.com/quentinrousseau
-- contact@quentinrousseau.fr
+- contact@quent.in
 
 ## License
 
