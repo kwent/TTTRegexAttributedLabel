@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Quentin Rousseau. All rights reserved.
 //
 
-#import "TTTAttributedLabel/TTTAttributedLabel/TTTAttributedLabel.h"
+#import "TTTAttributedLabel.h"
 
 @interface TTTRegexAttributedLabel: TTTAttributedLabel
 

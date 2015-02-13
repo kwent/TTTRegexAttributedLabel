@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6F2A4A551A536AF2009F40FD /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F2A4A541A536AF2009F40FD /* Launch Screen.xib */; };
-		6F2A4A591A536C4F009F40FD /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2A4A581A536C4F009F40FD /* TTTAttributedLabel.m */; };
 		6F3F6B211834A87000244655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B201834A87000244655 /* Foundation.framework */; };
 		6F3F6B231834A87000244655 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B221834A87000244655 /* CoreGraphics.framework */; };
 		6F3F6B251834A87000244655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B241834A87000244655 /* UIKit.framework */; };
@@ -19,7 +18,7 @@
 		6F3F6B431834A87000244655 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B421834A87000244655 /* XCTest.framework */; };
 		6F3F6B441834A87000244655 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B201834A87000244655 /* Foundation.framework */; };
 		6F3F6B451834A87000244655 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F3F6B241834A87000244655 /* UIKit.framework */; };
-		6F3F6B601834AAB800244655 /* TTTRegexAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F6B5E1834AAB800244655 /* TTTRegexAttributedLabel.m */; };
+		BF83BACD861A78198AE14DDC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E023B6ECA5C9149F6A26EAC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,9 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E023B6ECA5C9149F6A26EAC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F37CBEE18975584F8121382 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3B85F4916754E384788A9BBD /* libPods-TTTRegexAttributedLabelExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TTTRegexAttributedLabelExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F2A4A541A536AF2009F40FD /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
-		6F2A4A571A536C4F009F40FD /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
-		6F2A4A581A536C4F009F40FD /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		6F3F6B1D1834A87000244655 /* TTTRegexAttributedLabelExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTRegexAttributedLabelExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F3F6B201834A87000244655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6F3F6B221834A87000244655 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,8 +50,9 @@
 		6F3F6B391834A87000244655 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6F3F6B411834A87000244655 /* TTTRegexAttributedLabelExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTTRegexAttributedLabelExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F3F6B421834A87000244655 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6F3F6B5D1834AAB800244655 /* TTTRegexAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTRegexAttributedLabel.h; path = ../TTTRegexAttributedLabel.h; sourceTree = "<group>"; };
-		6F3F6B5E1834AAB800244655 /* TTTRegexAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTRegexAttributedLabel.m; path = ../TTTRegexAttributedLabel.m; sourceTree = "<group>"; };
+		91FB428EDEE2566C6D78DC4A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B9F5D4B8C171735F9F12C21D /* Pods-TTTRegexAttributedLabelExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTTRegexAttributedLabelExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTTRegexAttributedLabelExample/Pods-TTTRegexAttributedLabelExample.release.xcconfig"; sourceTree = "<group>"; };
+		E84272562B5295C058D1D2CF /* Pods-TTTRegexAttributedLabelExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTTRegexAttributedLabelExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTTRegexAttributedLabelExample/Pods-TTTRegexAttributedLabelExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 				6F3F6B231834A87000244655 /* CoreGraphics.framework in Frameworks */,
 				6F3F6B251834A87000244655 /* UIKit.framework in Frameworks */,
 				6F3F6B211834A87000244655 /* Foundation.framework in Frameworks */,
+				BF83BACD861A78198AE14DDC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,26 +80,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6F2A4A561A536C4F009F40FD /* TTTAttributedLabel */ = {
+		38E4C6FDD6012B7EE7158A78 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6F2A4A571A536C4F009F40FD /* TTTAttributedLabel.h */,
-				6F2A4A581A536C4F009F40FD /* TTTAttributedLabel.m */,
+				E84272562B5295C058D1D2CF /* Pods-TTTRegexAttributedLabelExample.debug.xcconfig */,
+				B9F5D4B8C171735F9F12C21D /* Pods-TTTRegexAttributedLabelExample.release.xcconfig */,
+				2F37CBEE18975584F8121382 /* Pods.debug.xcconfig */,
+				91FB428EDEE2566C6D78DC4A /* Pods.release.xcconfig */,
 			);
-			name = TTTAttributedLabel;
-			path = ../TTTAttributedLabel/TTTAttributedLabel;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		6F3F6B141834A87000244655 = {
 			isa = PBXGroup;
 			children = (
 				6F2A4A541A536AF2009F40FD /* Launch Screen.xib */,
-				6F2A4A561A536C4F009F40FD /* TTTAttributedLabel */,
-				6F3F6B5D1834AAB800244655 /* TTTRegexAttributedLabel.h */,
-				6F3F6B5E1834AAB800244655 /* TTTRegexAttributedLabel.m */,
 				6F3F6B261834A87000244655 /* TTTRegexAttributedLabel */,
 				6F3F6B1F1834A87000244655 /* Frameworks */,
 				6F3F6B1E1834A87000244655 /* Products */,
+				38E4C6FDD6012B7EE7158A78 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +118,8 @@
 				6F3F6B221834A87000244655 /* CoreGraphics.framework */,
 				6F3F6B241834A87000244655 /* UIKit.framework */,
 				6F3F6B421834A87000244655 /* XCTest.framework */,
+				3B85F4916754E384788A9BBD /* libPods-TTTRegexAttributedLabelExample.a */,
+				0E023B6ECA5C9149F6A26EAC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F3F6B521834A87000244655 /* Build configuration list for PBXNativeTarget "TTTRegexAttributedLabelExample" */;
 			buildPhases = (
+				F0DFC6F83ADD9951F2A0EE65 /* Check Pods Manifest.lock */,
 				6F3F6B191834A87000244655 /* Sources */,
 				6F3F6B1A1834A87000244655 /* Frameworks */,
 				6F3F6B1B1834A87000244655 /* Resources */,
+				D1D5BDCEE482EDBEFFD64CC0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,11 +195,6 @@
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Quentin Rousseau";
-				TargetAttributes = {
-					6F3F6B401834A87000244655 = {
-						TestTargetID = 6F3F6B1C1834A87000244655;
-					};
-				};
 			};
 			buildConfigurationList = 6F3F6B181834A87000244655 /* Build configuration list for PBXProject "TTTRegexAttributedLabelExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -234,6 +234,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D1D5BDCEE482EDBEFFD64CC0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DFC6F83ADD9951F2A0EE65 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6F3F6B191834A87000244655 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -242,8 +275,6 @@
 				6F3F6B3A1834A87000244655 /* ViewController.m in Sources */,
 				6F3F6B311834A87000244655 /* AppDelegate.m in Sources */,
 				6F3F6B2D1834A87000244655 /* main.m in Sources */,
-				6F3F6B601834AAB800244655 /* TTTRegexAttributedLabel.m in Sources */,
-				6F2A4A591A536C4F009F40FD /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +381,7 @@
 		};
 		6F3F6B531834A87000244655 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F37CBEE18975584F8121382 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -363,6 +395,7 @@
 		};
 		6F3F6B541834A87000244655 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91FB428EDEE2566C6D78DC4A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -377,7 +410,6 @@
 		6F3F6B561834A87000244655 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTTRegexAttributedLabel.app/TTTRegexAttributedLabel";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -391,7 +423,6 @@
 				);
 				INFOPLIST_FILE = "TTTRegexAttributedLabelTests/TTTRegexAttributedLabelExampleTests-Info.plist";
 				PRODUCT_NAME = TTTRegexAttributedLabelExampleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -399,7 +430,6 @@
 		6F3F6B571834A87000244655 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TTTRegexAttributedLabel.app/TTTRegexAttributedLabel";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -409,7 +439,6 @@
 				GCC_PREFIX_HEADER = "TTTRegexAttributedLabel/TTTRegexAttributedLabel-Prefix.pch";
 				INFOPLIST_FILE = "TTTRegexAttributedLabelTests/TTTRegexAttributedLabelExampleTests-Info.plist";
 				PRODUCT_NAME = TTTRegexAttributedLabelExampleTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

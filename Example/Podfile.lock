@@ -1,0 +1,17 @@
+PODS:
+  - TTTAttributedLabel (1.13.1)
+  - TTTRegexAttributedLabel (1.0.0):
+    - TTTAttributedLabel (> 1.4.0)
+
+DEPENDENCIES:
+  - TTTRegexAttributedLabel (from `../`)
+
+EXTERNAL SOURCES:
+  TTTRegexAttributedLabel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TTTAttributedLabel: 71843ac4178e1ebd6b0950b54325146726a124ae
+  TTTRegexAttributedLabel: 52980a5d59b9db30fe389156b46a39de40134f25
+
+COCOAPODS: 0.35.0

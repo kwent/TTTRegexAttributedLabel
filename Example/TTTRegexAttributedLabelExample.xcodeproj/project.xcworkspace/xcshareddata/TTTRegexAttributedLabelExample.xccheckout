@@ -22,7 +22,7 @@
 		<key>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</key>
 		<string>../../..</string>
 		<key>A43B3F8F1FFE63510EF5D0CFDB1DB558C0C67BF9</key>
-		<string>../../..TTTAttributedLabel/</string>
+		<string>../../..TTTAttributedLabel</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:kwent/TTTRegexAttributedLabel.git</string>
@@ -36,17 +36,17 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A43B3F8F1FFE63510EF5D0CFDB1DB558C0C67BF9</string>
+			<string>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TTTAttributedLabel</string>
+			<string>TTTRegexAttributedLabel</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6D29A33F7E8CAC2C013F705A36107C73D27DAB4C</string>
+			<string>A43B3F8F1FFE63510EF5D0CFDB1DB558C0C67BF9</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TTTRegexAttributedLabel</string>
+			<string>TTTRegexAttributedLabelTTTAttributedLabel</string>
 		</dict>
 	</array>
 </dict>

@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+
+xcodeproj 'TTTRegexAttributedLabelExample'
+
+deployment_target = '6.0'
+
+pod 'TTTRegexAttributedLabel', :path => '../'

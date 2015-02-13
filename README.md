@@ -1,24 +1,21 @@
 # TTTRegexAttributedLabel
+
+[![Build Status](https://travis-ci.org/kwent/TTTRegexAttributedLabel.svg)](https://travis-ci.org/kwent/TTTRegexAttributedLabel)
+
 ## Add addition functions (regex) to TTTAttributedLabel.
 
 `TTTRegexAttributedLabel` allows to set Font & Color to TTTAttributedLabel via Regex easier.
 
 ![A demo screen](Docs/screenshot.jpg)
 
-
 ## Installation
 
-Clone the repository
+[CocoaPods](http://cocoapods.org) is the recommended method of installing `TTTRegexAttributedLabel`. Simply add the following line to your `Podfile`:
 
-```shell
-$ git clone git@github.com:kwent/TTTRegexAttributedLabel.git
-$ cd TTTRegexAttributedLabel/
-```
+#### Podfile
 
-Install **TTTAttributedLabel** Git submodules
-
-```shell
-$ git submodule update --init --recursive
+```ruby
+pod 'TTTRegexAttributedLabel'
 ```
 
 ## Example Usage
