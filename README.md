@@ -1,6 +1,7 @@
 # TTTRegexAttributedLabel
 
 [![Build Status](https://travis-ci.org/kwent/TTTRegexAttributedLabel.svg)](https://travis-ci.org/kwent/TTTRegexAttributedLabel)
+[![CocoaPods](https://img.shields.io/cocoapods/v/TTTRegexAttributedLabel.svg)](http://cocoadocs.org/docsets/TTTRegexAttributedLabel/1.0.0/)
 
 ## Add addition functions (regex) to TTTAttributedLabel.
 
